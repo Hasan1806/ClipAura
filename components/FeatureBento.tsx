@@ -37,7 +37,7 @@ export default function FeatureBento() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-60px" }}
             transition={{ duration: 0.65, ease: easeOutCubic }}
-            className="md:col-span-7 bg-[#6B53FF] text-white rounded-[12px] p-8 sm:p-10 flex flex-col justify-between shadow-[0_16px_48px_rgba(107,83,255,0.22)] group"
+            className="md:col-span-7 bg-[#6B53FF] text-white rounded-[12px] p-6 sm:p-10 flex flex-col justify-between shadow-[0_16px_48px_rgba(107,83,255,0.22)] group"
           >
             <div>
               <div className="flex items-center justify-between mb-6">
@@ -83,7 +83,7 @@ export default function FeatureBento() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-60px" }}
             transition={{ duration: 0.65, delay: 0.08, ease: easeOutCubic }}
-            className="md:col-span-5 bg-[#2B2A35] text-white rounded-[12px] p-8 sm:p-10 flex flex-col justify-between shadow-[0_16px_48px_rgba(20,20,35,0.12)] group"
+            className="md:col-span-5 bg-[#2B2A35] text-white rounded-[12px] p-6 sm:p-10 flex flex-col justify-between shadow-[0_16px_48px_rgba(20,20,35,0.12)] group"
           >
             <div>
               <div className="flex items-center justify-between mb-6">
@@ -124,7 +124,7 @@ export default function FeatureBento() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-60px" }}
             transition={{ duration: 0.65, delay: 0.12, ease: easeOutCubic }}
-            className="md:col-span-5 bg-white text-[#2B2A35] border border-[#DDDDE5] rounded-[12px] p-8 sm:p-10 flex flex-col justify-between shadow-[0_8px_30px_rgba(20,20,40,0.04)] group"
+            className="md:col-span-5 bg-white text-[#2B2A35] border border-[#DDDDE5] rounded-[12px] p-6 sm:p-10 flex flex-col justify-between shadow-[0_8px_30px_rgba(20,20,40,0.04)] group"
           >
             <div>
               <div className="flex items-center justify-between mb-6">
@@ -163,7 +163,7 @@ export default function FeatureBento() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-60px" }}
             transition={{ duration: 0.65, delay: 0.16, ease: easeOutCubic }}
-            className="md:col-span-7 bg-[#F0EDFF] text-[#2B2A35] border border-[#DCD5FF] rounded-[12px] p-8 sm:p-10 flex flex-col justify-between shadow-[0_8px_30px_rgba(107,83,255,0.06)] group"
+            className="md:col-span-7 bg-[#F0EDFF] text-[#2B2A35] border border-[#DCD5FF] rounded-[12px] p-6 sm:p-10 flex flex-col justify-between shadow-[0_8px_30px_rgba(107,83,255,0.06)] group"
           >
             <div>
               <div className="flex items-center justify-between mb-6">
