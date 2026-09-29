@@ -5,7 +5,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import {
   X,
   CheckCircle2,
-  Sparkles,
+  Zap,
+  Briefcase,
   ArrowRight,
 } from "lucide-react";
 
@@ -85,7 +86,7 @@ export default function InteractiveModals({
           ) : selectedCampaign ? (
             <div>
               <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-[6px] bg-[#F0EDFF] text-[#4334B8] text-xs font-semibold uppercase tracking-wider mb-4 border border-[#DCD5FF]">
-                <Sparkles size={12} />
+                <Zap size={12} className="text-[#6B53FF]" />
                 <span>Verified Campaign Brief</span>
               </div>
 
@@ -141,7 +142,7 @@ export default function InteractiveModals({
             <div>
               {/* General Signup / Demo Request */}
               <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-[6px] bg-[#F0EDFF] text-[#4334B8] text-xs font-semibold uppercase tracking-wider mb-4 border border-[#DCD5FF]">
-                <Sparkles size={12} className="text-[#6B53FF]" />
+                <Briefcase size={12} className="text-[#6B53FF]" />
                 <span>Get Started with UGCFY</span>
               </div>
 

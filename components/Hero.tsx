@@ -6,7 +6,8 @@ import {
   Film,
   Video,
   Clapperboard,
-  Sparkles,
+  Briefcase,
+  Layers,
 } from "lucide-react";
 
 interface HeroProps {
@@ -172,7 +173,7 @@ export default function Hero({ onOpenDemo }: HeroProps) {
             className="group relative inline-flex items-center justify-between sm:justify-center gap-3 px-6 sm:px-8 py-3 sm:py-3.5 rounded-xl bg-[#CCFF00] hover:bg-[#b8e600] text-[#1E0B4B] font-bold text-sm sm:text-base transition-all duration-300 shadow-[0_0_35px_rgba(204,255,0,0.45)] hover:shadow-[0_0_55px_rgba(204,255,0,0.7)] hover:scale-[1.02] active:scale-95 cursor-pointer w-full sm:w-auto sm:min-w-[180px]"
           >
             <div className="flex items-center gap-2.5">
-              <Sparkles size={18} className="text-[#1E0B4B] flex-shrink-0" />
+              <Briefcase size={18} className="text-[#1E0B4B] flex-shrink-0" />
               <div className="flex flex-col items-start leading-tight">
                 <span className="text-sm sm:text-base font-extrabold tracking-tight">Brand</span>
                 <span className="text-[10px] font-medium opacity-80">Launch campaigns</span>
@@ -213,7 +214,7 @@ export default function Hero({ onOpenDemo }: HeroProps) {
             <span className="truncate">Brand Docs</span>
           </div>
           <div className="flex items-center justify-center gap-1.5 sm:gap-2 px-2.5 py-1.5 sm:px-3 sm:py-1.5 rounded-lg bg-white/5 border border-white/10 backdrop-blur-xs text-[11px] sm:text-xs font-medium text-white/80 shadow-[0_0_20px_rgba(107,83,255,0.15)]">
-            <Sparkles size={12} className="text-[#CCFF00] flex-shrink-0" />
+            <Layers size={12} className="text-[#CCFF00] flex-shrink-0" />
             <span className="truncate">3D VFX &amp; Post</span>
           </div>
           <div className="flex items-center justify-center gap-1.5 sm:gap-2 px-2.5 py-1.5 sm:px-3 sm:py-1.5 rounded-lg bg-white/5 border border-white/10 backdrop-blur-xs text-[11px] sm:text-xs font-medium text-white/80 shadow-[0_0_20px_rgba(107,83,255,0.15)]">
