@@ -274,21 +274,21 @@ export default function WorkflowStory({ onOpenDemo }: WorkflowStoryProps) {
                 </span>
               </div>
 
-              <div className="grid grid-cols-3 gap-3 py-4">
-                <div className="p-3.5 rounded-[8px] bg-[#FAFAFC] border border-[#DDDDE5]">
-                  <span className="text-[10px] font-mono text-[#6F7387] uppercase block">Attributed Sales</span>
-                  <div className="text-lg font-bold text-[#2B2A35] mt-0.5">₹8,45,000</div>
-                  <span className="text-[10px] text-emerald-600 font-semibold">+34.2% MoM</span>
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 py-4">
+                <div className="p-3.5 rounded-[8px] bg-[#FAFAFC] border border-[#DDDDE5] overflow-hidden">
+                  <span className="text-[10px] font-mono text-[#6F7387] uppercase block truncate">Attributed Sales</span>
+                  <div className="text-base sm:text-lg font-bold text-[#2B2A35] mt-0.5 truncate">₹8,45,000</div>
+                  <span className="text-[10px] text-emerald-600 font-semibold block truncate">+34.2% MoM</span>
                 </div>
-                <div className="p-3.5 rounded-[8px] bg-[#FAFAFC] border border-[#DDDDE5]">
-                  <span className="text-[10px] font-mono text-[#6F7387] uppercase block">Total Reach</span>
-                  <div className="text-lg font-bold text-[#6B53FF] mt-0.5">2.42M</div>
-                  <span className="text-[10px] text-[#6F7387]">CPM: ₹18.20</span>
+                <div className="p-3.5 rounded-[8px] bg-[#FAFAFC] border border-[#DDDDE5] overflow-hidden">
+                  <span className="text-[10px] font-mono text-[#6F7387] uppercase block truncate">Total Reach</span>
+                  <div className="text-base sm:text-lg font-bold text-[#6B53FF] mt-0.5 truncate">2.42M</div>
+                  <span className="text-[10px] text-[#6F7387] block truncate">CPM: ₹18.20</span>
                 </div>
-                <div className="p-3.5 rounded-[8px] bg-[#FAFAFC] border border-[#DDDDE5]">
-                  <span className="text-[10px] font-mono text-[#6F7387] uppercase block">Escrow Payout</span>
-                  <div className="text-lg font-bold text-emerald-700 mt-0.5">₹2,80,000</div>
-                  <span className="text-[10px] text-[#6F7387]">Released</span>
+                <div className="p-3.5 rounded-[8px] bg-[#FAFAFC] border border-[#DDDDE5] overflow-hidden">
+                  <span className="text-[10px] font-mono text-[#6F7387] uppercase block truncate">Escrow Payout</span>
+                  <div className="text-base sm:text-lg font-bold text-emerald-700 mt-0.5 truncate">₹2,80,000</div>
+                  <span className="text-[10px] text-[#6F7387] block truncate">Released</span>
                 </div>
               </div>
 

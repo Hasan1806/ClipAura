@@ -182,18 +182,18 @@ export default function FeatureBento() {
                 Define visual moodboards, asset specifications, and submission dates with automated escrow locking on acceptance.
               </p>
 
-              <div className="grid grid-cols-3 gap-3 text-xs">
-                <div className="p-3 bg-white rounded-[6px] border border-[#DCD5FF]">
-                  <span className="text-[#6F7387] block font-mono text-[10px]">ESCROW BUDGET</span>
-                  <strong className="text-sm font-bold text-[#6B53FF]">₹4,50,000</strong>
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5 sm:gap-3 text-xs">
+                <div className="p-3 bg-white rounded-[6px] border border-[#DCD5FF] overflow-hidden">
+                  <span className="text-[#6F7387] block font-mono text-[10px] truncate">ESCROW BUDGET</span>
+                  <strong className="text-sm font-bold text-[#6B53FF] truncate block">₹4,50,000</strong>
                 </div>
-                <div className="p-3 bg-white rounded-[6px] border border-[#DCD5FF]">
-                  <span className="text-[#6F7387] block font-mono text-[10px]">SLOTS</span>
-                  <strong className="text-sm font-bold text-[#2B2A35]">8 Creators</strong>
+                <div className="p-3 bg-white rounded-[6px] border border-[#DCD5FF] overflow-hidden">
+                  <span className="text-[#6F7387] block font-mono text-[10px] truncate">SLOTS</span>
+                  <strong className="text-sm font-bold text-[#2B2A35] truncate block">8 Creators</strong>
                 </div>
-                <div className="p-3 bg-white rounded-[6px] border border-[#DCD5FF]">
-                  <span className="text-[#6F7387] block font-mono text-[10px]">DELIVERABLES</span>
-                  <strong className="text-sm font-bold text-[#2B2A35]">2x Reels</strong>
+                <div className="p-3 bg-white rounded-[6px] border border-[#DCD5FF] overflow-hidden">
+                  <span className="text-[#6F7387] block font-mono text-[10px] truncate">DELIVERABLES</span>
+                  <strong className="text-sm font-bold text-[#2B2A35] truncate block">2x Reels</strong>
                 </div>
               </div>
             </div>
