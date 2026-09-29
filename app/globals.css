@@ -1,0 +1,127 @@
+@import "tailwindcss";
+
+:root {
+  --font-sans: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: var(--font-geist-mono), monospace;
+
+  /* Signature UGCFY Purple DNA */
+  --purple-primary: #6B53FF;
+  --purple-bright: #8D49F7;
+  --purple-pale: #F0EDFF;
+  --purple-mid-pale: #DCD5FF;
+  --purple-deep: #4334B8;
+  --purple-dark: #211D4B;
+
+  /* Surface & Typography */
+  --charcoal: #2B2A35;
+  --dark-ink: #1E1D28;
+  --soft-text: #6F7387;
+  --soft-canvas: #FAFAFC;
+  --hairline: #DDDDE5;
+  --warm-yellow: #FFD02C;
+}
+
+@theme inline {
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #FAFAFC;
+  color: #2B2A35;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #FAFAFC;
+  color: #2B2A35;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Custom Text Selection */
+::selection {
+  background: #6B53FF;
+  color: #FFFFFF;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAFAFC;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(107, 83, 255, 0.25);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6B53FF;
+}
+
+/* Precise Editorial Pitch-style Typography Clamps */
+.hero-pitch-title {
+  font-size: clamp(48px, 8vw, 120px);
+  line-height: 0.92;
+  letter-spacing: -0.04em;
+  font-weight: 800;
+}
+
+.hero-editorial-title {
+  font-size: clamp(38px, 4.8vw, 76px);
+  line-height: 0.94;
+  letter-spacing: -0.035em;
+  font-weight: 750;
+}
+
+.statement-editorial-title {
+  font-size: clamp(36px, 5.5vw, 92px);
+  line-height: 0.94;
+  letter-spacing: -0.04em;
+  font-weight: 700;
+}
+
+.section-editorial-title {
+  font-size: clamp(32px, 4.2vw, 68px);
+  line-height: 0.98;
+  letter-spacing: -0.035em;
+  font-weight: 700;
+}
+
+.metric-number-title {
+  font-size: clamp(64px, 9vw, 132px);
+  line-height: 0.88;
+  letter-spacing: -0.05em;
+  font-weight: 800;
+}
+
+/* Seamless Marquee Animation */
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 32s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
