@@ -22,15 +22,21 @@ export default function LogoStrip() {
         </p>
       </div>
 
-      <div className="overflow-hidden relative w-full py-2">
-        <div className="animate-marquee flex items-center gap-16 sm:gap-24 whitespace-nowrap">
+      <div className="overflow-hidden relative w-full py-4">
+        {/* Ambient fade edges */}
+        <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-16 sm:w-32 bg-gradient-to-r from-white to-transparent z-10" />
+        <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-16 sm:w-32 bg-gradient-to-l from-white to-transparent z-10" />
+
+        <div className="animate-marquee flex items-center gap-12 sm:gap-20 whitespace-nowrap">
           {[...logos, ...logos, ...logos].map((name, idx) => (
-            <span
+            <div
               key={`${name}-${idx}`}
-              className="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight font-sans text-[#2B2A35]/35 hover:text-[#6B53FF] transition-colors duration-200 cursor-default flex-shrink-0 select-none"
+              className="group/logo relative px-5 py-2.5 rounded-xl border border-transparent transition-all duration-300 cursor-pointer flex-shrink-0 select-none hover:border-[#DCD5FF] hover:bg-[#F0EDFF]/70 active:bg-[#F0EDFF] hover:shadow-[0_0_30px_rgba(107,83,255,0.35)] active:shadow-[0_0_40px_rgba(107,83,255,0.55)] hover:scale-105 active:scale-105"
             >
-              {name}
-            </span>
+              <span className="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight font-sans text-[#2B2A35]/35 group-hover/logo:text-[#6B53FF] group-active/logo:text-[#6B53FF] transition-all duration-300 group-hover/logo:drop-shadow-[0_0_20px_rgba(107,83,255,0.75)] group-active/logo:drop-shadow-[0_0_25px_rgba(107,83,255,0.9)] inline-block">
+                {name}
+              </span>
+            </div>
           ))}
         </div>
       </div>
