@@ -18,7 +18,7 @@ export default function Hero({ onOpenDemo }: HeroProps) {
 
   return (
     <section
-      className="relative min-h-[auto] sm:min-h-[75vh] lg:min-h-[82vh] pt-6 sm:pt-12 pb-10 sm:pb-18 text-white overflow-hidden flex flex-col justify-center items-center text-center"
+      className="relative min-h-[88vh] sm:min-h-[90vh] lg:min-h-[94vh] pt-14 sm:pt-24 pb-16 sm:pb-28 text-white overflow-hidden flex flex-col justify-center items-center text-center"
       style={{
         backgroundColor: "#2B1066",
       }}
@@ -41,14 +41,14 @@ export default function Hero({ onOpenDemo }: HeroProps) {
       {/* LAYER 2: SOFT LAVENDER LIGHT BLOOMS                           */}
       {/* ============================================================ */}
       <div
-        className="absolute -top-24 -left-20 w-[350px] sm:w-[550px] h-[350px] sm:h-[550px] rounded-full pointer-events-none blur-[90px] sm:blur-[120px]"
+        className="absolute -top-24 -left-20 w-[400px] sm:w-[600px] h-[400px] sm:h-[600px] rounded-full pointer-events-none blur-[100px] sm:blur-[130px]"
         style={{
           background: "radial-gradient(circle, rgba(216, 203, 255, 0.22) 0%, transparent 70%)",
         }}
         aria-hidden="true"
       />
       <div
-        className="absolute top-1/4 -right-20 w-[350px] sm:w-[550px] h-[350px] sm:h-[550px] rounded-full pointer-events-none blur-[90px] sm:blur-[130px]"
+        className="absolute top-1/3 -right-20 w-[400px] sm:w-[600px] h-[400px] sm:h-[600px] rounded-full pointer-events-none blur-[100px] sm:blur-[140px]"
         style={{
           background: "radial-gradient(circle, rgba(141, 73, 247, 0.25) 0%, transparent 70%)",
         }}
@@ -57,65 +57,64 @@ export default function Hero({ onOpenDemo }: HeroProps) {
 
       {/* ============================================================ */}
       {/* LAYER 3: BLURRED FLOATING PRODUCTION & AGENCY BOARDS         */}
-      {/* Hidden on mobile to avoid overlapping text and clutter       */}
       {/* ============================================================ */}
-      <div className="hidden md:block absolute inset-0 pointer-events-none overflow-hidden select-none" aria-hidden="true">
+      <div className="absolute inset-0 pointer-events-none overflow-hidden select-none" aria-hidden="true">
         {/* Top Left: Commercial Shot List */}
-        <div className="absolute top-4 left-[10%] w-[210px] h-[120px] rounded-xl border border-white/10 bg-white/5 backdrop-blur-xs p-3 text-left opacity-35">
-          <span className="text-[10px] font-bold text-white/80 block leading-tight">
+        <div className="absolute top-3 left-[2%] sm:left-[10%] w-[160px] sm:w-[210px] h-[95px] sm:h-[120px] rounded-xl border border-white/10 bg-white/5 backdrop-blur-xs p-2.5 sm:p-3 text-left opacity-25 sm:opacity-35">
+          <span className="text-[9px] sm:text-[10px] font-bold text-white/80 block leading-tight">
             COMMERCIAL
             <br />
             SHOT LIST
           </span>
-          <div className="h-7 w-full bg-white/10 rounded mt-2.5" />
+          <div className="h-5 sm:h-7 w-full bg-white/10 rounded mt-2" />
         </div>
 
         {/* Top Center: THE DIRECTOR'S CUT */}
-        <div className="absolute top-2 left-[50%] -translate-x-1/2 w-[260px] h-[140px] rounded-xl border border-white/10 bg-gradient-to-b from-white/10 to-white/5 backdrop-blur-xs p-3 text-center opacity-35">
-          <span className="text-[11px] font-serif italic text-white/90 tracking-widest block uppercase pt-1">
+        <div className="absolute top-1 left-[50%] -translate-x-1/2 w-[200px] sm:w-[260px] h-[110px] sm:h-[140px] rounded-xl border border-white/10 bg-gradient-to-b from-white/10 to-white/5 backdrop-blur-xs p-2.5 sm:p-3 text-center opacity-20 sm:opacity-35">
+          <span className="text-[10px] sm:text-[11px] font-serif italic text-white/90 tracking-widest block uppercase pt-0.5">
             THE DIRECTOR&apos;S
             <br />
             CUT TREATMENT
           </span>
-          <div className="h-8 w-3/4 mx-auto bg-white/10 rounded mt-2" />
+          <div className="h-6 sm:h-8 w-3/4 mx-auto bg-white/10 rounded mt-1.5" />
         </div>
 
         {/* Top Right: Production Treatment */}
-        <div className="absolute top-4 right-[10%] w-[210px] h-[120px] rounded-xl border border-white/10 bg-white/5 backdrop-blur-xs p-3 text-left opacity-35">
-          <span className="text-[10px] font-bold text-white/80 block">
+        <div className="absolute top-3 right-[2%] sm:right-[10%] w-[160px] sm:w-[210px] h-[95px] sm:h-[120px] rounded-xl border border-white/10 bg-white/5 backdrop-blur-xs p-2.5 sm:p-3 text-left opacity-25 sm:opacity-35">
+          <span className="text-[9px] sm:text-[10px] font-bold text-white/80 block">
             Production
             <br />
             Treatment
           </span>
-          <div className="h-7 w-full bg-white/10 rounded mt-2.5" />
+          <div className="h-5 sm:h-7 w-full bg-white/10 rounded mt-2" />
         </div>
 
         {/* Mid Left: CREATIVE BRIEF */}
-        <div className="absolute top-[28%] left-[3%] w-[240px] h-[140px] rounded-xl border border-white/15 bg-gradient-to-br from-white/10 via-purple-500/10 to-transparent backdrop-blur-xs p-4 text-left opacity-40">
-          <span className="text-xl font-black text-white/70 block tracking-tighter leading-none mb-1">
+        <div className="absolute top-[28%] -left-6 sm:left-[3%] w-[180px] sm:w-[240px] h-[110px] sm:h-[140px] rounded-xl border border-white/15 bg-gradient-to-br from-white/10 via-purple-500/10 to-transparent backdrop-blur-xs p-3 sm:p-4 text-left opacity-25 sm:opacity-40">
+          <span className="text-lg sm:text-xl font-black text-white/70 block tracking-tighter leading-none mb-1">
             CREATIVE
           </span>
-          <span className="text-lg font-black text-white/60 block tracking-tighter leading-none">
+          <span className="text-base sm:text-lg font-black text-white/60 block tracking-tighter leading-none">
             BRIEF
           </span>
         </div>
 
         {/* Lower Left: EPISODIC BRAND DOC */}
-        <div className="absolute bottom-12 left-[6%] w-[220px] h-[120px] rounded-xl border border-white/10 bg-white/5 backdrop-blur-xs p-3 text-left opacity-30">
-          <span className="text-[9px] font-mono tracking-widest text-white/60 block uppercase">
+        <div className="absolute bottom-16 -left-4 sm:left-[6%] w-[170px] sm:w-[220px] h-[95px] sm:h-[120px] rounded-xl border border-white/10 bg-white/5 backdrop-blur-xs p-2.5 sm:p-3 text-left opacity-20 sm:opacity-30">
+          <span className="text-[8px] sm:text-[9px] font-mono tracking-widest text-white/60 block uppercase">
             EPISODIC BRAND DOC
           </span>
-          <div className="h-8 w-full bg-white/10 rounded mt-2" />
+          <div className="h-6 sm:h-8 w-full bg-white/10 rounded mt-2" />
         </div>
 
         {/* Lower Right: MOODBOARD & COLOR GRADE */}
-        <div className="absolute bottom-10 right-[6%] w-[250px] h-[140px] rounded-xl border border-white/15 bg-white/5 backdrop-blur-xs p-3.5 text-left opacity-35">
-          <span className="text-base font-black text-white/80 block leading-tight mb-1">
+        <div className="absolute bottom-14 -right-4 sm:right-[6%] w-[180px] sm:w-[250px] h-[110px] sm:h-[140px] rounded-xl border border-white/15 bg-white/5 backdrop-blur-xs p-3 sm:p-3.5 text-left opacity-25 sm:opacity-35">
+          <span className="text-xs sm:text-base font-black text-white/80 block leading-tight mb-1">
             MOODBOARD &amp;
             <br />
             COLOR GRADE
           </span>
-          <span className="text-[9px] font-mono text-white/50 tracking-wider">4K CINEMATIC LOOK</span>
+          <span className="text-[8px] sm:text-[9px] font-mono text-white/50 tracking-wider">4K CINEMATIC LOOK</span>
         </div>
       </div>
 
